@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/6f0e8eb73f.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -65,7 +67,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Repellat, architecto
                                     hic
                                     repellendus voluptatibus quod <br> nostrum modi illo corrupti .</p>
-                                <a class="btn btn-primary" href="">Get Started</a>
+                                <a class="btn Edtech-bg-primary" href="">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +92,7 @@
         </section>
 
 
-        <!-- Courses -->
+        <!-- Start Courses -->
         <section class="container">
             <div class="d-flex justify-content-center mt-5">
                 <div class="text-center">
@@ -214,6 +216,7 @@
                 </div>
             </div>
         </section>
+        <!-- End Courses -->
 
 
 
@@ -253,7 +256,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary fw-bold px-4 py-2">Read More</button>
+                                    <button class="btn Edtech-bg-primary fw-bold px-4 py-2">Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -267,15 +270,56 @@
         <!-- Ready to join section -->
 
         <section class="container mt-5">
-            <div class="card bg-primary p-3">
+            <div class="card Edtech-bg-primary p-3">
                 <div class="card-body d-flex">
                     <div class="col-md-6 p-4">
                         <h2 class="card-title">Ready to join?</h2>
                         <p class="card-text">It is a long established fact that a reader will be distracted by the
                             readable content of a page when looking at its layout.</p>
                     </div>
+
                     <div class="ms-auto d-flex align-items-center p-5">
-                        <button type="button" class="btn btn-light">Register Now</button>
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">Register Now </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Enter Your Information:</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Form name, email and password -->
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">First and Last
+                                                name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Register</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -332,7 +376,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center m-4">
-                <button type="button" class="btn btn-primary">View All</button>
+                <button type="button" class="btn Edtech-bg-primary px-5">View All</button>
             </div>
         </section>
 
@@ -349,7 +393,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-sm-6 mb-3 mb-sm-0">
                     <div class="card">
                         <div class="card-body">
